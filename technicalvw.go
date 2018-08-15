@@ -1,4 +1,4 @@
-package zandbergenmediation
+package main
 
 import (
 	"net/http"

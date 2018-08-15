@@ -1,4 +1,4 @@
-package zandbergenmediation
+package main
 
 const uwMediatorView = `<!-- Put IE into quirks mode -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"

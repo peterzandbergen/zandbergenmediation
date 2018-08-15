@@ -1,4 +1,4 @@
-package zandbergenmediation
+package main
 
 import (
 	_ "fmt"
@@ -16,7 +16,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	// fmt.Fprint(w, "Hello, world!")
 }
 
-func init() {
+func RegisterHandlers() {
 	indexHandlerFunc := NewServeViewFunc(indexView)
 	http.HandleFunc("/index.html", indexHandlerFunc)
 	http.HandleFunc("/contact.html", NewServeViewFunc(contactView))
