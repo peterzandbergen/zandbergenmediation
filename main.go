@@ -39,7 +39,6 @@ func RegisterHandlers() {
 	http.HandleFunc("/mediation.html", NewServeViewFunc(mediationView))
 	http.HandleFunc("/nmi.html", NewServeViewFunc(nmiView))
 	http.HandleFunc("/uwmediator.html", NewServeViewFunc(uwMediatorView))
-	// http.HandleFunc("/sitemap.xml", handleSitemap)
+	http.HandleFunc("/sitemap.xml", handleSitemap)
 	http.HandleFunc("/", indexHandlerFunc)
 }
-
