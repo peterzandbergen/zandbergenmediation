@@ -1,10 +1,5 @@
-# application: zandbergenmediation
-# version: 2
 runtime: go
 api_version: go1
-env: standard
-
-default_expiration: "365d"
 
 handlers:
 - url: /html
