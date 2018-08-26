@@ -1,6 +1,12 @@
 runtime: go
 api_version: go1
 
+env_variables:
+  URL_FROM: "zandbergenmediation.nl"
+  URL_TO:   "www.zandbergenmediation.nl"
+  # URL_FROM: "localhost"
+  # URL_TO:   "127.0.0.1"
+
 handlers:
 - url: /html
   static_dir: html
