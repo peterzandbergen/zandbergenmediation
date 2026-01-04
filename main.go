@@ -10,14 +10,11 @@ import (
 	"os"
 	"strings"
 
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/log"
 )
 
 func main() {
 	// http.HandleFunc("/", handle)
-	RegisterHandlers()
-	appengine.Main()
+	registerHandlers()
 }
 
 func handle(w http.ResponseWriter, r *http.Request) {
