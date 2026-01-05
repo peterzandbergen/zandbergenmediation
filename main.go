@@ -56,7 +56,7 @@ func slogHandler(logger *slog.Logger, next http.Handler) http.Handler {
 		ctx := r.Context()
 
 		defer func(start time.Time) {
-			logger.InfoContext(ctx, "served request", "method", r.Method, "url", r.URL.String(), "remote_addr", r.RemoteAddr, "duration_ms", time.Since(start).Milliseconds())
+			logger.InfoContext(ctx, "served request", "method", r.Method, "url", r.URL.String(), "remote_addr", r.RemoteAddr, "duration_micros", time.Since(start).Microseconds())
 		}(time.Now())
 
 		next.ServeHTTP(w, r)
