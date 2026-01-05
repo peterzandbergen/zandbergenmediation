@@ -8,23 +8,6 @@ env_variables:
   # URL_TO:   "127.0.0.1"
 
 handlers:
-- url: /html
-  static_dir: html
-  secure: always
-
-- url: /css
-  static_dir: html/css
-  secure: always
-
-- url: /img
-  static_dir: html/img
-  secure: always
-  # expiration: "1d"
-
-- url: /static
-  static_dir: html/static
-  secure: always
-
 - url: /.*
   script: _go_app
   secure: always
